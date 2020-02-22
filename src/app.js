@@ -5,6 +5,7 @@ const geocode = require('../../weather-app/utils/geocode');
 const forecast = require('../../weather-app/utils/forecast');
 
 const app = express(); //store express application
+const port = process.env.PORT || 3000;          // will get port form environment if exist , if not get port 3000
 
 //routes
 //app.com
@@ -125,7 +126,7 @@ app.get('*',(req,res) => {
 
 //app need to listen an specific port
 app.listen(3000 ,()=> {
-    console.log('Server is up on port 3000');
+    console.log('http://localhost:' + port);
 });
 //---> keep staying up and runing until we stop it (ctrC)
 
