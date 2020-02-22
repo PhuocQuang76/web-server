@@ -125,7 +125,7 @@ app.get('*',(req,res) => {
 
 
 //app need to listen an specific port
-app.listen(3000 ,()=> {
+app.listen(port ,()=> {
     console.log('http://localhost:' + port);
 });
 //---> keep staying up and runing until we stop it (ctrC)
